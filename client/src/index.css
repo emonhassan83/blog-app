@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* custom css class */
+.active{
+    @apply font-medium tracking-wide text-[#A81C51] transition-colors duration-200
+  }
+  
+  .default{
+    @apply font-medium tracking-wide text-black transition-colors duration-200 hover:text-[#A81C51]
+  }

@@ -1,3 +1,63 @@
-node_modules
-# Keep environment variables out of version control
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Environment Variables & Secrets
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+client/.env
+client/.env.local
+server/.env
+
+# Client Build Outputs (Vite / React)
+client/dist/
+client/dist-ssr/
+client/build/
+dist/
+build/
+out/
+
+# Server Build & Logs (Node.js / TypeScript)
+server/dist/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Prisma & Local Database Artifacts
+server/prisma/migrations/*.db
+server/prisma/migrations/*.db-journal
+*.db
+*.sqlite
+
+# Testing & Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Editor & OS Metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary & Cache Files
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.turbo
+.parcel-cache
+scratch/
